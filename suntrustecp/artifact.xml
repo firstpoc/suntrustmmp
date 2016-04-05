@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><artifacts>
+    <artifact name="AccountCreationAPI" groupId="com.poc.suntrustecp.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/AccountCreationAPI.xml</file>
+    </artifact>
+    <artifact name="AccountCreationSeq" groupId="com.poc.suntrustecp.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/AccountCreationSeq.xml</file>
+    </artifact>
+    <artifact name="AccountTransactionAPI" groupId="com.poc.suntrustecp.api" version="1.0.0" type="synapse/api" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/api/AccountTransactionAPI.xml</file>
+    </artifact>
+    <artifact name="AccountTransactionSeq" groupId="com.poc.suntrustecp.sequence" version="1.0.0" type="synapse/sequence" serverRole="EnterpriseServiceBus">
+        <file>src/main/synapse-config/sequences/AccountTransactionSeq.xml</file>
+    </artifact>
+</artifacts>

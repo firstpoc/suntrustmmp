@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence name="AccountTransactionSeq" onError="fault" trace="disable" xmlns="http://ws.apache.org/ns/synapse">
+  <class name="com.poc.mediator.AccountTransactionMediator"/>
+  <payloadFactory media-type="json">
+    <format>$1</format>
+    <args>
+      <arg evaluator="xml"
+        expression="get-property('account.transaction.result')" xmlns:ns="http://org.apache.synapse/xsd"/>
+    </args>
+  </payloadFactory>
+  <respond/>
+</sequence>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<api context="/accountcreation" name="AccountCreationAPI" xmlns="http://ws.apache.org/ns/synapse">
+  <resource inSequence="AccountCreationSeq" methods="POST"
+    protocol="http" url-mapping="/">
+    <outSequence/>
+    <faultSequence/>
+  </resource>
+</api>
