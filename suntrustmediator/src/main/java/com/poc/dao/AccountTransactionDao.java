@@ -1,6 +1,5 @@
 package com.poc.dao;
 
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -108,13 +107,13 @@ public class AccountTransactionDao {
 						+ useID
 						+ ","
 						+ transactionAttributes.getFromAccountNumber()
-						+ ",'"
+						+ ","
 						+ transactionAttributes.getToAccountNumber()
 						+ ",'"
 						+ transType
-						+ ", "
-						+ transactionAttributes.getTransactionAmount()
 						+ "',"
+						+ transactionAttributes.getTransactionAmount()
+						+ ",'"
 						+ transactionAttributes.getChequeNumber()
 						+ "', 'INR',"
 						+ toAccountBalance + "," + mappingID + ",'');";
@@ -147,7 +146,7 @@ public class AccountTransactionDao {
 					System.out.println("insertQueryAccountMapping.."
 							+ UpdateQueryFromAccount);
 					ResultSet UpdateQueryFromAccountResults = session
-							.execute(UpdateQueryToAccount);
+							.execute(UpdateQueryFromAccount);
 					UpdateQueryFromAccountResult = UpdateQueryFromAccountResults
 							.wasApplied();
 
